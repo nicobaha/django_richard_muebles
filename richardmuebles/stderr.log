@@ -1,0 +1,137 @@
+Invalid HTTP_HOST header: 'taller3.agenciaenroque.cl'. You may need to add 'taller3.agenciaenroque.cl' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'taller3.agenciaenroque.cl'. You may need to add 'taller3.agenciaenroque.cl' to ALLOWED_HOSTS.
+Bad Request: /
+Traceback (most recent call last):
+  File "/home/agenci25/richardmuebles/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'richardmuebles/wsgi.py')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/imp.py", line 172, in load_source
+    module = _load(spec)
+             ^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 721, in _load
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "richardmuebles/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/agenci25/richardmuebles/richardmuebles/settings.py", line 28, in <module>
+    ALLOWED_HOSTS = [taller3.agenciaenroque.cl]
+                     ^^^^^^^
+NameError: name 'taller3' is not defined
+Traceback (most recent call last):
+  File "/home/agenci25/richardmuebles/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'richardmuebles/wsgi.py')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/imp.py", line 172, in load_source
+    module = _load(spec)
+             ^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 721, in _load
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "richardmuebles/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/agenci25/richardmuebles/richardmuebles/settings.py", line 28, in <module>
+    ALLOWED_HOSTS = [taller3.agenciaenroque.cl]
+                     ^^^^^^^
+NameError: name 'taller3' is not defined
+[UID:2928][3973744] Child process with pid: 3973769 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/agenci25/richardmuebles/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'richardmuebles/wsgi.py')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/imp.py", line 172, in load_source
+    module = _load(spec)
+             ^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 721, in _load
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "richardmuebles/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agenci25/virtualenv/richardmuebles/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/agenci25/richardmuebles/richardmuebles/settings.py", line 28, in <module>
+    ALLOWED_HOSTS = [taller3.agenciaenroque.cl]
+                     ^^^^^^^
+NameError: name 'taller3' is not defined
+[UID:2928][3973744] Child process with pid: 3974086 was killed by signal: 15, core dumped: no
